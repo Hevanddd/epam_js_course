@@ -1,0 +1,13 @@
+image: node:14.4.0
+
+stages:
+  - test
+
+Test:
+  stage: test
+  before_script: 
+    - npm i
+  script:
+    - npm run test
+
+
