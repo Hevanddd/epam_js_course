@@ -38,7 +38,8 @@ export const countWords = (words) => {
  * Palindrome 
  */
 export const isPalindrome = (str) => {
-  return str == str.split('').reverse().join('');
+  return str == str.split('').reverse().join('') ?
+      "The entry is a palindrome" : "Entry is not a palindrome"
 };
 
 /**
@@ -56,11 +57,11 @@ export const amountToCoins = (amount, coins) => {
     return [];
   } else {
     if (amount >= coins[0]) {
-      left = (amount - coins[0]);
-      return [coins[0]].concat(amountTocoins(left, coins));
+      const left = (amount - coins[0]);
+      return [coins[0]].concat(amountToCoins(left, coins));
     } else {
       coins.shift();
-      return amountTocoins(amount, coins);
+      return amountToCoins(amount, coins);
     }
   }
 };

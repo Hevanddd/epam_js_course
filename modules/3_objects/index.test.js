@@ -7,7 +7,7 @@ import {
   Groups,
 } from './index';
 
-describe.skip('Module 3', () => {
+describe('Module 3', () => {
   describe('arrayToList', () => {
     it('should create linked list from array', () => {
       const result = arrayToList([10, 20]);

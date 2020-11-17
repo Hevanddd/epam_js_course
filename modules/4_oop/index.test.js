@@ -6,7 +6,7 @@ import {
   Book,
 } from './index';
 
-describe.skip('Module 4', () => {
+describe('Module 4', () => {
   beforeAll(() => {
     global.console.log = jest.fn();
   });

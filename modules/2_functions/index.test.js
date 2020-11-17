@@ -9,7 +9,7 @@ import {
   reduce,
 } from './index';
 
-describe.skip('Module 2', () => {
+describe('Module 2', () => {
   beforeAll(() => {
     global.console.log = jest.fn();
   });

@@ -78,9 +78,10 @@ export function Clock() {
  * Groups
  */
 
-export class Group {
+export class Groups {
   constructor() {
     this.values = [];
+    this.length = 0;
   }
 
   add(element) {
@@ -88,6 +89,7 @@ export class Group {
       console.log("Value(s) already added to Group. Values must be unique.")
     else
       this.values.push(element);
+      this.length = this.values.length;
   }
 
   has(element) {
@@ -97,11 +99,12 @@ export class Group {
   delete(element) {
     if (this.has(element)) {
       this.values = this.values.filter(index => index != element);
+      this.length = this.values.length;
     }
   }
 
   static from(iterable) {
-    let group = new Group();
+    let group = new Groups();
     for (let item of iterable)
       group.add(item);
     return group;
