@@ -7,7 +7,7 @@ import {
   MyPromise,
 } from './index';
 
-describe.skip('Module 5 Async', () => {
+describe('Module 5 Async', () => {
   beforeAll(() => {
     global.console.log = jest.fn();
     global.console.error = jest.fn();
