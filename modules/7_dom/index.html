@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-  <head>
-    <title>HTML + JS boilerplate project</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  </head>
-  <body>
-    <div>Hello, world 7</div>
-  </body>
+
+<head>
+  <title>HTML + JS boilerplate project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="getSize()" onresize="getSize()">
+  <section>
+    <div id="wh"></div>
+  </section>
+  <section class="search-section">
+    <div class="left-content">
+      <input id="search-input" type="text">
+      <textarea id="search-text" name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <p id="search-result"></p>
+  </section>
+  <section class="slider-section">
+    <div class="slider-params">
+      <div class="slider-params__add-container">
+        <input id="slider-url" type="text" placeholder="Image URL">
+        <button id="slider-add-btn">Add</button>
+      </div>
+      <div>
+        <span>Timer (sec): </span>
+        <input id="slider-timer" type="number" value="4">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="slider__wrapper">
+        <img src="https://i.ytimg.com/vi/1Ne1hqOXKKI/maxresdefault.jpg" class="slider__item" alt="">
+        <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/68DF/production/_109474862_angrycat-index-getty3-3.jpg"
+          class="slider__item" alt="">
+        <img src="https://www.webanywhere.co.uk/enterprise/wp-content/uploads/angry-cat.jpg" class="slider__item"
+          alt="">
+      </div>
+      <a class="slider__control slider__control_left" href="#" role="button"></a>
+      <a class="slider__control slider__control_right" href="#" role="button"></a>
+    </div>
+  </section>
+  <section>
+    <table id="myTable">
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+      </tr>
+    </table>
+    <input type="button" class="button" value="Add another line" onclick="addField();">
+  </section>
+</body>
+<script src="index.js"></script>
+
 </html>

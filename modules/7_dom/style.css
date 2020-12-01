@@ -1,1 +1,124 @@
+section {
+  text-align: center;
+  margin-top: 50px;
+  border: 1px solid black;
+  padding: 50px;
+}
 
+.search-section {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+#search-input {
+  width: 97%;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+#search-result {
+  margin: 0;
+}
+
+.slider-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-params {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-params__add-container {
+  margin-right: 50px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 40%;
+
+}
+
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  width: 200px;
+  height: 350px;
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, .5);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.slider__control_left {
+  left: 0;
+}
+
+.slider__control_right {
+  right: 0;
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+table {
+  width: 250px;
+  margin: auto;
+}
+
+table,
+td {
+  border: 1px solid black;
+  min-width: 75px;
+}
+
+.delete {
+  min-width: 20px;
+}
