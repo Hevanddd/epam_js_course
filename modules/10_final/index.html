@@ -1,10 +1,59 @@
 <!DOCTYPE html>
-  <head>
-    <title>Module 7 exercise</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+  <title>Module 7 exercise</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
 </head>
-  <body>
-    <div>Hello, world 10</div>
-  </body>
+
+<body>
+  <header>
+    <div class="header-wrapper">
+      <p class="header-wrapper__title">Todo List</p>
+      <input class="header-wrapper__input" id="search" placeholder="Search..." type="text">
+    </div>
+  </header>
+  <div class="container">
+    <p>
+      <div class="new-task-wrapper">
+        <input id="new-task" type="text" placeholder="New task">
+        <button class="new-task-btn">ADD</button>
+      </div>
+    </p>
+
+    <div class="list-header">
+      <h3>Open</h3>
+      <select id="open-sort">
+        <option value="" disabled selected>Select sorting</option>
+        <option value="date">Date creation(Asc)</option>
+        <option value="text">Text(Desc)</option>
+      </select>
+    </div>
+    <ul id="incomplete-tasks">
+    </ul>
+
+    <div class="clearBtn-wrapper">
+      <span id="clearOpenList" class="clearBtn">Clear "Open" list</span>
+    </div>
+
+    <div class="list-header">
+      <h3>Done</h3>
+      <select id="done-sort">
+        <option value="" disabled selected>Select sorting</option>
+        <option value="date">Date creation(Asc)</option>
+        <option value="text">Text(Desc)</option>
+      </select>
+    </div>
+    <ul id="completed-tasks">
+    </ul>
+    <div class="clearBtn-wrapper">
+      <p id="clearDoneList" class="clearBtn">Clear "Done" list</p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+
 </html>
